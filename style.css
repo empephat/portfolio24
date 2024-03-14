@@ -1,0 +1,337 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* All Sections */
+
+#me, #aboutMe, #resume, #projects, #contact {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 80%;
+}
+
+/* section:not(:last-child):not(#contact) {
+    margin-bottom: 550px;
+} */
+
+#me {
+    margin-bottom: 550px;
+}
+
+.mainHeader, .aboutHeader, .resumeHeader, .projectHeader, .contactHeader{
+    font-family: 'Protest Strike', sans-serif;
+    margin-top: 10rem;
+    letter-spacing: 6px;
+    font-size: 4rem;
+}
+
+.aboutSecondHeader, .resumeSecondHeader {
+    margin-top: 15px;
+    font-size: 1.7rem;
+}
+
+.arrow {
+    margin-top: 18rem;
+    font-size: 4rem;
+    animation: bounce 1s infinite alternate;
+}
+
+
+
+/* Me Section */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    min-height: 100vh;
+}
+
+#me {
+    margin-top: 16rem;
+}
+
+#profile-picture {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    border-radius: 40%;
+    margin-bottom: 10px;
+}
+
+h1, h3 {
+    margin-bottom: 10px;
+}
+
+.links i {
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 2rem;
+    color: #000000;
+}
+
+.links i:hover {
+    color: #fb982d; 
+}
+
+
+/* About Section */
+
+.aboutContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 250px;
+}
+
+.aboutHeader {
+    text-align: left;
+    margin-top: 0rem;
+}
+
+.aboutSecondHeader {
+    text-align: left;
+}
+
+.aboutMeList, .resumeList {
+    list-style-type: none;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.aboutMeListItems {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.firstBlock {
+    display: inline-block;
+    width: 30%;
+    font-weight: bold;
+}
+
+.aboutMeText {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    text-align: left;
+    margin: 0 auto 10px; 
+}
+
+#aboutPicture {
+    margin-top: 12px;
+    /* width: 60%; */
+    border-radius: 30%;
+}
+
+/* Resume section */
+.projectContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.resumeListName {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 1.6rem;
+}
+
+.resumeListName:hover, .projectSecondHeader:hover {
+    color: #fb982d;
+}
+
+/* Lines In Resume */
+.resumeListName::before, .resumeListName::after{
+    content: "";
+    height: 1px;
+    background-color: #000000;
+    display: block;
+}
+
+.resumeListInfo {
+    color: rgb(110, 110, 110);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.resumeListText {
+    margin: 20px 0px;
+    font-size: large;
+}
+
+/* Project section */
+
+.projectImages {
+    margin-bottom: 20px;
+    border-radius: 10%;
+    width: 400px;
+    border: 1px solid black;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.projectImages:hover {
+    opacity: 0.3;
+}
+
+
+.projectHeader {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.projectSecondHeader {
+    font-size: 1.5rem;
+}
+
+.projectText {
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.leftContainer {
+    margin-right: 5rem;
+}
+
+.rightContainer {
+    margin-left: 5rem;
+}
+
+/* Contact Section */
+
+#contact {
+    margin-bottom: 30px;
+}
+
+.contactText {
+    text-align: center;
+}
+
+.emailContact {
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 2rem;
+}
+
+.emailLink:hover {
+    color: #fb982d;
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 12px; 
+    font-size: 1.1rem;
+    resize: vertical 
+  }
+  
+  input[type=submit] {
+    background-color: #000000;;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  .subjectTitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #fb982d;
+    color: #000000;
+  }
+  
+  .contactContainer{
+    border-radius: 5px;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  /* Footer section */
+
+footer {
+    background-color: rgb(226, 226, 226);
+    width: 100%;
+    height: 200px;
+}
+
+.footerLinks {
+    padding-top: 20px;
+    font-size: 1.6rem;
+    text-align: center;
+}
+@media only screen and (max-width: 1250px) {
+    #profile-picture {
+        width: 60%;
+}
+    #aboutPicture {
+    width: 100%;
+}
+}
+
+@media only screen and (max-width: 1000px) {
+    #profile-picture {
+        width: 60%;
+}
+    #aboutPicture {
+    width: 80%;
+}
+  .leftContainer, .rightContainer {
+    margin-right: 0rem;
+    margin-left: 0rem;
+}
+    .aboutContainer, .projectContainer {
+        grid-template-columns: none;
+}
+    .aboutHeader{
+        text-align: center;
+        margin: 30px 0px;
+}
+    #me, #aboutMe, #resume, #projects, #contact {
+        max-width: 60%;
+}
+
+}
+
+@media only screen and (min-width: 1250px) {
+    #aboutPicture {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #profile-picture {
+        width: 80%;
+}
+    .arrow {
+    margin-top: 8rem;
+
+}}
+
+/* Animation for arrow */
+@keyframes bounce {
+    0% {
+      transform: translateY(0); 
+    }
+    100% {
+      transform: translateY(-20px);
+    }};
