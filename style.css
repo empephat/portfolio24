@@ -128,10 +128,6 @@ h1, h3 {
 }
 
 /* Resume section */
-.projectContainer {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
 
 .resumeListName {
     margin-bottom: 20px;
@@ -169,6 +165,11 @@ h1, h3 {
 
 /* Project section */
 
+.projectContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
 .projectImages {
     margin-bottom: 20px;
     border-radius: 10%;
@@ -184,7 +185,6 @@ h1, h3 {
     opacity: 0.3;
 }
 
-
 .projectHeader {
     text-align: center;
     margin-bottom: 40px;
@@ -197,6 +197,7 @@ h1, h3 {
 .projectText {
     text-align: left;
     font-size: 1.1rem;
+    height: 110px;
 }
 
 .leftContainer {
@@ -327,6 +328,12 @@ footer {
     margin-top: 8rem;
 
 }}
+
+@media only screen and (min-width: 1500px) {
+    .projectImages {
+        max-width: 500px; 
+    }
+}
 
 /* Animation for arrow */
 @keyframes bounce {
