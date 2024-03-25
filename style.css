@@ -172,7 +172,8 @@ h1, h3 {
 .projectImages {
     margin-bottom: 20px;
     border-radius: 10%;
-    width: 400px;
+    max-width: 100%;
+    height: auto;
     border: 1px solid black;
     opacity: 1;
     transition: .5s ease;
