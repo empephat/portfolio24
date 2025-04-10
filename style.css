@@ -8,338 +8,459 @@
 
 /* All Sections */
 
-#me, #aboutMe, #resume, #projects, #contact {
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    max-width: 80%;
+#me,
+#aboutMe,
+#resume,
+#projects,
+#contact {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  max-width: 80%;
 }
-
-/* section:not(:last-child):not(#contact) {
-    margin-bottom: 550px;
-} */
 
 #me {
-    margin-bottom: 550px;
+  margin-bottom: 550px;
 }
 
-.mainHeader, .aboutHeader, .resumeHeader, .projectHeader, .contactHeader{
-    font-family: 'Protest Strike', sans-serif;
-    margin-top: 10rem;
-    letter-spacing: 6px;
-    font-size: 4rem;
+.mainHeader,
+.aboutHeader,
+.resumeHeader,
+.projectHeader,
+.contactHeader {
+  font-family: "Protest Strike", sans-serif;
+  margin-top: 10rem;
+  letter-spacing: 6px;
+  font-size: 4rem;
+  text-align: left;
 }
 
-.aboutSecondHeader, .resumeSecondHeader {
-    margin-top: 15px;
-    font-size: 1.7rem;
+.mainHeader {
+  text-align: center;
+}
+
+.aboutSecondHeader,
+.resumeSecondHeader {
+  margin-top: 15px;
+  font-size: 1.7rem;
 }
 
 .arrow {
-    margin-top: 18rem;
-    font-size: 4rem;
-    animation: bounce 1s infinite alternate;
+  margin-top: 18rem;
+  font-size: 4rem;
+  animation: bounce 1s infinite alternate;
 }
-
-
 
 /* Me Section */
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; 
-    min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 #me {
-    margin-top: 16rem;
+  margin-top: 10rem;
+  text-align: center;
 }
 
 #profile-picture {
-    display: block;
-    margin: 0 auto;
-    width: 20%;
-    border-radius: 40%;
-    margin-bottom: 10px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 5%;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.8s ease, box-shadow 0.3s ease;
 }
 
-h1, h3 {
-    margin-bottom: 10px;
+h1,
+h3 {
+  margin-bottom: 10px;
 }
 
 .links i {
-    margin-top: 10px;
-    margin-right: 10px;
-    font-size: 2rem;
-    color: #000000;
+  margin-top: 10px;
+  font-size: 2rem;
+  color: #000000;
 }
 
 .links i:hover {
-    color: #fb982d; 
+  color: #fb982d;
 }
-
 
 /* About Section */
 
 .aboutContainer {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin-bottom: 250px;
-}
-
-.aboutHeader {
-    text-align: left;
-    margin-top: 0rem;
-}
-
-.aboutSecondHeader {
-    text-align: left;
-}
-
-.aboutMeList, .resumeList {
-    list-style-type: none;
-    text-align: left;
-    margin-top: 40px;
-}
-
-.aboutMeListItems {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-}
-
-.firstBlock {
-    display: inline-block;
-    width: 30%;
-    font-weight: bold;
-}
-
-.aboutMeText {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
-    text-align: left;
-    margin: 0 auto 10px; 
-}
-
-#aboutPicture {
-    margin-top: 12px;
-    /* width: 60%; */
-    border-radius: 30%;
-}
-
-/* Resume section */
-
-.resumeListName {
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-size: 1.6rem;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    column-gap: 1.6rem;
-}
-
-.resumeListName:hover, .projectSecondHeader:hover {
-    color: #fb982d;
-}
-
-/* Lines In Resume */
-.resumeListName::before, .resumeListName::after{
-    content: "";
-    height: 1px;
-    background-color: #000000;
-    display: block;
-}
-
-.resumeListInfo {
-    color: rgb(110, 110, 110);
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-.resumeListText {
-    margin: 20px 0px;
-    font-size: large;
-}
-
-/* Project section */
-
-.projectContainer {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-.projectImages {
-    margin-bottom: 20px;
-    border-radius: 10%;
-    max-width: 100%;
-    height: auto;
-    border: 1px solid black;
-    opacity: 1;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-
-.projectImages:hover {
-    opacity: 0.3;
-}
-
-.projectHeader {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.projectSecondHeader {
-    font-size: 1.5rem;
-}
-
-.projectText {
-    text-align: left;
-    font-size: 1.1rem;
-    height: 110px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 2rem;
+  align-items: center;
+  margin: 0 auto 4rem;
+  max-width: 1200px;
 }
 
 .leftContainer {
-    margin-right: 5rem;
+  text-align: center;
+}
+
+#aboutPicture {
+  max-width: 500px;
+  height: auto;
+  border-radius: 5%;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.links a {
+  display: inline-block;
+  margin: 0 0.5rem;
+  font-size: 2rem;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.links a:hover {
+  color: #fb982d;
+  transform: scale(1.2);
+}
+
+.arrow {
+  margin-top: 3rem;
+  font-size: 3rem;
+  color: #000;
+  animation: bounce 1s infinite alternate;
+}
+
+.arrow i:hover {
+  color: #fb982d;
+}
+
+.aboutHeader {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.aboutMeText {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  text-align: left;
+}
+
+.aboutMeList {
+  list-style: none;
+  margin-top: 2rem;
+  padding: 0;
+}
+
+.aboutMeListItems {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.firstBlock {
+  font-weight: bold;
+  color: #333;
+}
+
+.secondBlock a {
+  color: #fb982d;
+  text-decoration: none;
+}
+
+.secondBlock a:hover {
+  text-decoration: underline;
+}
+
+/* Resume Section */
+
+.resumeContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.resumeCard {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.resumeCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.resumeListName {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.resumeListInfo {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.resumeListText {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Projects Section */
+
+.projectContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.projectCard {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.projectImages {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.projectSecondHeader {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.projectText {
+  font-size: 1rem;
+  color: #555;
+}
+
+.leftContainer {
+  margin-right: 5rem;
 }
 
 .rightContainer {
-    margin-left: 5rem;
+  margin-left: 5rem;
 }
 
 /* Contact Section */
 
 #contact {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .contactText {
-    text-align: center;
+  text-align: center;
 }
 
 .emailContact {
-    font-size: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
-    text-decoration: none;
-    margin-bottom: 2rem;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 2rem;
 }
 
 .emailLink:hover {
-    color: #fb982d;
+  color: #fb982d;
 }
 
-input[type=text], select, textarea {
-    width: 100%; 
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 12px; 
-    font-size: 1.1rem;
-    resize: vertical 
-  }
-  
-  input[type=submit] {
-    background-color: #000000;;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-  }
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  resize: vertical;
+}
 
-  .subjectTitle {
-    font-size: 1.3rem;
-    font-weight: 600;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #fb982d;
-    color: #000000;
-  }
-  
-  .contactContainer{
-    border-radius: 5px;
-    margin-top: 2rem;
-    text-align: center;
-  }
+input[type="submit"] {
+  background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
 
-  /* Footer section */
+.subjectTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+input[type="submit"]:hover {
+  background-color: #fb982d;
+  color: #000000;
+}
+
+.contactContainer {
+  border-radius: 5px;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Footer section */
 
 footer {
-    background-color: rgb(226, 226, 226);
-    width: 100%;
-    height: 200px;
+  background-color: rgb(226, 226, 226);
+  width: 100%;
+  height: 90px;
 }
 
 .footerLinks {
-    padding-top: 20px;
-    font-size: 1.6rem;
-    text-align: center;
-}
-@media only screen and (max-width: 1250px) {
-    #profile-picture {
-        width: 60%;
-}
-    #aboutPicture {
-    width: 100%;
-}
+  padding-top: 20px;
+  font-size: 1.6rem;
+  text-align: center;
 }
 
-@media only screen and (max-width: 1000px) {
-    #profile-picture {
-        width: 60%;
-}
-    #aboutPicture {
-    width: 80%;
-}
-  .leftContainer, .rightContainer {
-    margin-right: 0rem;
-    margin-left: 0rem;
-}
-    .aboutContainer, .projectContainer {
-        grid-template-columns: none;
-}
-    .aboutHeader{
-        text-align: center;
-        margin: 30px 0px;
-}
-    #me, #aboutMe, #resume, #projects, #contact {
-        max-width: 60%;
+.mainHeader {
+  font-size: 3.5rem;
+  font-family: "Protest Strike", sans-serif;
+  letter-spacing: 5px;
+  margin-bottom: 1rem;
 }
 
+.subHeader {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 2rem;
 }
 
-@media only screen and (min-width: 1250px) {
-    #aboutPicture {
-        width: 80%;
-    }
-}
+/* Mobile-first default styles already applied in your base */
 
-@media only screen and (max-width: 700px) {
-    #profile-picture {
-        width: 80%;
-}
-    .arrow {
+/* ---------- Phones (max-width: 600px) ---------- */
+@media (max-width: 600px) {
+  #profile-picture,
+  #aboutPicture {
+    width: 90%;
+  }
+
+  .arrow {
     margin-top: 8rem;
+  }
+}
 
-}}
+/* ---------- Tablets and Small Screens (max-width: 900px) ---------- */
+@media (max-width: 900px) {
+  #profile-picture {
+    width: 80%;
+  }
 
-@media only screen and (min-width: 1500px) {
-    .projectImages {
-        max-width: 500px; 
-    }
+  #aboutPicture {
+    width: 80%;
+  }
+
+  .aboutContainer,
+  .projectContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .leftContainer,
+  .rightContainer {
+    margin: 0;
+  }
+
+  .aboutHeader {
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  #me,
+  #aboutMe,
+  #resume,
+  #projects,
+  #contact {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+  #aboutPicture {
+    width: 100%;
+    max-width: 400px; /* or 500px depending on how big you want it */
+  }
+
+  .aboutContainer {
+    grid-template-columns: 1fr 1fr; /* optional: gives the image a bit more space */
+  }
+} /* ---------- Medium Screens (max-width: 1200px) ---------- */
+@media (max-width: 1200px) {
+  #profile-picture {
+    width: 60%;
+  }
+
+  #aboutPicture {
+    width: 70%;
+  }
+}
+
+/* ---------- Desktops (min-width: 1200px) ---------- */
+@media (min-width: 1200px) {
+  #profile-picture {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  #aboutPicture {
+    width: 100%;
+    max-width: 700px;
+  }
+}
+
+/* ---------- Extra Large Screens (min-width: 1500px) ---------- */
+@media (min-width: 1500px) {
+  .projectImages {
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 1500px) {
+  #aboutPicture {
+    max-width: 800px; /* or whatever size you want */
+    width: 100%; /* keeps it responsive within the parent */
+  }
 }
 
 /* Animation for arrow */
 @keyframes bounce {
-    0% {
-      transform: translateY(0); 
-    }
-    100% {
-      transform: translateY(-20px);
-    }};
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
